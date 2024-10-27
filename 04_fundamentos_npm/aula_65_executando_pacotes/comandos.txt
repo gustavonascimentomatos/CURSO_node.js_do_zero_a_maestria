@@ -1,0 +1,2 @@
+npm install cowsay@1.6.0
+npx cowsay "Hello World!"

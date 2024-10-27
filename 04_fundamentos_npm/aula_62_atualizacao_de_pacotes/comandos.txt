@@ -1,0 +1,8 @@
+Atualizar todo os pacotes
+-> npm update
+
+Atulizar apenas o pacotes
+-> npm updade (nome_pacote)
+
+Verifica se algum pacote necessita de atualizacao
+-> npm npm-check-updates -u

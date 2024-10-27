@@ -1,0 +1,14 @@
+{
+  "name": "primeiro_projeto",
+  "version": "1.0.0",
+  "description": "primeiro projeto npm secao 03 aula 57",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Gustavo Matos",
+  "license": "MIT"
+}
