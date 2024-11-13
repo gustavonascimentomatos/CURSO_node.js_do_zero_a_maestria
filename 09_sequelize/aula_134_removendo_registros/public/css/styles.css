@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h1 {
+    margin: 10px auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* nav */
+.nav {
+    background-color: lightgray;
+    padding: 20px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Mantém o espaçamento entre o botão e o link centralizado */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav-item, .navbar-brand {
+    margin-left: 1em;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-item:hover, .navbar-brand:hover {
+    margin-left: 1em;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.nav-link, .navbar-brand {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav div ul li {
+    text-align: right;
+}
+
+.form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+.form-control input {
+    padding: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions a,
+.actions input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    color: #000;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.actions .details-btn {
+    border-color: #004085;
+    color: #004085;
+}
+
+.actions .delete-btn {
+    border-color: #721c24;
+    color: #721c24;
+}
+
+.form-checkbox {
+    flex-direction: row;
+}
+
+.form-checkbox input {
+    margin-right: 10px;
+}
+
+/* USERS */
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.users-container .item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.item h2, .item p{
+    margin-bottom: .8em;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    margin-top: auto; /* Faz o rodapé sempre ficar no fim */
+    position: absolute;
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+#create {
+    padding-bottom: 5px;
+}
