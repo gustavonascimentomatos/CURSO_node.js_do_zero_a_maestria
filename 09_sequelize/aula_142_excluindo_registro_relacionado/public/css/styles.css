@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h1 {
+    margin: 10px auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav */
+.nav {
+    background-color: lightgray;
+    padding: 20px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Mantém o espaçamento entre o botão e o link centralizado */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav-item, .navbar-brand {
+    margin-left: 1em;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-item:hover, .navbar-brand:hover {
+    margin-left: 1em;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.nav-link, .navbar-brand {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav div ul li {
+    text-align: right;
+}
+
+.form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+.form-control input {
+    padding: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions a,
+.actions input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    color: #000;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.actions .details-btn {
+    border-color: #004085;
+    color: #004085;
+}
+
+.actions .delete-btn {
+    border-color: #721c24;
+    color: #721c24;
+}
+
+.form-checkbox {
+    flex-direction: row;
+}
+
+.form-checkbox input {
+    margin-right: 10px;
+}
+
+/* USERS */
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.users-container .item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.item h2, .item p{
+    margin-bottom: .8em;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 5px;
+    left: 0;
+    width: 100%;
+    color: #000;
+
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+#create {
+    padding-bottom: 5px;
+}
+
+/* ADDRESS */
+.address-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-top: 1px solid #ccc;
+}
+
+.address-container h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espaço entre os elementos */
+}
+
+.form-control {
+    flex: 1 1 calc(50% - 16px); /* Cada item ocupa 50% do espaço disponível menos a margem */
+    min-width: 200px; /* Largura mínima para evitar colapsos */
+}
+
+#endereco {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 5px;
+}
+
+#editar {
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+/* USER */
+#endereco-user {
+    margin: 20px auto 10px auto;
+}
+
+#p-user {
+    text-align: center;
+}
+
+.address-list div {
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;
+}
+
+.address-list form {
+    margin-left: 1em;
+}
+
+
+

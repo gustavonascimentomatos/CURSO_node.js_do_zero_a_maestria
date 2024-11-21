@@ -1,0 +1,15 @@
+<h1>Usuário:</h1>
+
+<h2>Nome: {{user.name}}</h2>
+<h2>Profissão: {{user.occupation}}</h2>
+
+{{#if user.newsletter}}
+    <h2>Assinante: Sim</h2>
+{{else}}
+     <h2>Assinante: Não</h2>
+{{/if}}
+
+<h2 id="endereco-user">Endereços:</h2>
+{{#each user.Addresses}}
+    <p id="p-user">{{this.id}} - {{this.pais}} - {{this.cep}} - {{this.estado}} - {{this.cidade}} - {{this.bairro}} - {{this.logradouro}} - {{this.numero}} - {{this.complemento}}</p>
+{{/each}}

@@ -1,0 +1,69 @@
+<h1>Editar Usuário: {{user.name}}</h1>
+
+<form action="/users/update" method="POST" class="form">
+    <input type="hidden" name="id" value="{{user.id}}">
+    <div class="form-control">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" value="{{user.name}}">
+    </div>
+    <div class="form-control">
+        <label for="occupation">Profissão:</label>
+        <input type="text" name="occupation" id="name" value="{{user.occupation}}">
+    </div>
+    <div class="form-control form-checkbox">
+
+        {{#if user.newsletter}}
+            <input type="checkbox" name="newsletter" checked>
+        {{else}}
+            <input type="checkbox" name="newsletter">
+        {{/if}} 
+
+        <label for="newsletter">Receber promoções?</label>
+    </div>
+    <input type="submit" value="Editar" id="editar">
+</form>
+<div class="address-container">
+    <h2>Endereço:</h2>
+    <form action="/address/create" method="POST">
+        <input type="hidden" name="UserId" value="{{user.id}}">
+        <div class="form-grid">
+            <div class="form-control">
+                <label for="pais">País:</label>
+                <input type="text" name="pais" placeholder="Digite o país">
+            </div>
+            <div class="form-control">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" placeholder="Digite o CEP">
+            </div>
+            <div class="form-control">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" placeholder="Digite o estado">
+            </div>
+            <div class="form-control">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" placeholder="Digite a cidade">
+            </div>
+            <div class="form-control">
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" placeholder="Digite o bairro">
+            </div>
+            <div class="form-control">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" name="logradouro" placeholder="Digite o logradouro">
+            </div>
+            <div class="form-control">
+                <label for="numero">Número:</label>
+                <input type="text" name="numero" placeholder="Digite o número">
+            </div>
+            <div class="form-control">
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" placeholder="Digite o complemento">
+            </div>
+            <div class="form-control">
+                <label for="referencia">Referência:</label>
+                <input type="text" name="referencia" placeholder="Digite a referência">
+            </div>
+        </div>
+        <input type="submit" value="Incluir endereço" id="endereco">
+    </form>
+</div>
