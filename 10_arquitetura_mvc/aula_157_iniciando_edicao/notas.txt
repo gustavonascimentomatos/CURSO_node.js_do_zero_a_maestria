@@ -1,0 +1,19 @@
+controllers: pasta que ficam os arquivos de Controller;
+models: pasta que ficam os arquivos de Model;
+views: pasta que ficam os arquivos de View;
+routes: pasta que ficam os arquivos de rotas;
+index.js: arquivo que inicializa a aplicação;
+
+npm init -y
+npm install express express-handlebars mysql2 sequelize
+npm install --save-dev nodemon
+
+mkdir controllers models routes views db public
+
+touch /models/Task.js
+touch /controllers/TaskController.js
+touch /views/layouts/main.handlebars
+touch /views/tasks/create.handlebars
+touch /public/css/styles.css
+
+touch /routes/tasksRouters.js
